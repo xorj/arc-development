@@ -11,6 +11,8 @@ import MobileApps from "./MobileApps";
 import Websites from "./Websites";
 import Revolution from "./Revolution";
 import About from "./About";
+import Contact from "./Contact";
+
 function App() {
   //Gerencia qual a tab selecionada, tanto através do header quanto do footer
   const [value, setValue] = useState(window.location.pathname);
@@ -57,7 +59,11 @@ function App() {
             path="/about"
             render={(props) => <About {...props} setValue={setValue} />}
           />
-
+          <Route
+            exact
+            path="/contact"
+            render={(props) => <Contact {...props} setValue={setValue} />}
+          />
           <Route exact path="/estimate" component={() => <div>Estimate</div>} />
         </Switch>
         <Footer value={value} setValue={setValue} />
