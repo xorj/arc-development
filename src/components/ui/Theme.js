@@ -57,6 +57,11 @@ export default createMuiTheme({
       color: arcGray,
       fontWeight: 300,
     },
+    caption: {
+      fontSize: "1em",
+      fontWeight: 300,
+      color: arcGray,
+    },
     learnButton: {
       borderColor: arcBlue,
       color: arcBlue,
