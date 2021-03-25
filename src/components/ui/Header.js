@@ -50,7 +50,7 @@ function ElevationScroll(props) {
 
 const useStyles = makeStyles((theme) => ({
   toolbarMargin: {
-    height: "5.5em",
+    height: "4.5em",
   },
   logo: {
     height: "5.5em",
